@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="tayo.css">
+    <!-- <link rel="stylesheet" href="Jquery.js">
+    <link rel="stylesheet" href="Jquery2.js">
+    <link rel="stylesheet" href="Jquery3.js"> -->
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-md navbar-light navs">
+            <!-- Brand -->
+            <a style="color: #777; text-decoration: none; letter-spacing: 5px;" class="navbar" href="#">Me</a>
+            
+            <!-- Toggler/collapsibe Button -->
+            <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse in" id="collapsibleNavbar">
+                <hr class="d-md-none">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a style="color: #777;" class="nav-link" href="#">Who</a>
+                </li>
+                <li class="nav-item">
+                  <a style="color: #777;" class="nav-link" href="#">What</a>
+                </li>
+                <li class="nav-item">
+                  <a style="color: #777;" class="nav-link" href="#">Where</a>
+                </li>
+              </ul>
+
+            </div>
+        </nav>
+
+        <div class=" first-container px-0">
+
+            <p>WHO I AM?</p>
+
+            <div class="first text-center">
+                <img src="./bird_image.jpg" alt="">
+            </div>
+
+            <p>I'm an adventurer</p>
+
+        </div>
+
+        <div class="second-container1">
+            <h6 style="padding-bottom:20px;">WHAT I AM?</h6>
+            <p>Lorem ipsum dolor sit amet.
+            Vel esse totam at voluptas.
+            Quas dolor modi nemo quia.
+            Officia dolor maiores temporibus et?
+            Eos accusamus facilis itaque consequuntur?
+            Consectetur ipsum amet fugit delectus.
+            Consequatur labore mollitia porro molestias!
+            Neque sunt reiciendis suscipit tempore.
+            Ab culpa molestias nemo veritatis.
+            Quos deleniti eos omnis laborum.</p>
+
+            
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+              Create an Account
+            </button>
+
+          
+  
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            First Name
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" name="" id="input1">
+                                    <span  id="report" style="color: rgb(230, 23, 23); margin-top: 0px;"></span>
+
+                                </div>
+                                
+
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            Last Name
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" name="" id="input2"> 
+                                    <span id="report1" style="color: rgb(230, 23, 23);"></span> 
+
+
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            Email
+                                        </span>
+                                    </div>
+                                    <input type="Email" class="form-control" name="" id="input3" placeholder="Email ">
+                                    <span id="report2" style="color: rgb(230, 23, 23);"></span>
+
+
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            Phone Number
+                                        </span>
+                                    </div>
+                                    <input type="number" class="form-control" name="" id="input4">
+                                    <span id="report3" style="color: rgb(230, 23, 23);"></span>
+
+
+                                </div>
+
+                                <div class="input-group mb-2">
+                                    <textarea style="resize: none;" name="" class="form-control"></textarea>
+
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            Address
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="submit btn btn-danger"  onclick="temmy()">Submit</button>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+  
+            
+         
+         
+               
+        </div>
+
+            
+        
+
+        <div class="container-fluid overflow-hidden second-container-fluid text-center">
+            <h3 class="contain">
+                Where To Find Me
+            </h3>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-4 row1">
+                    <p>Lorem ipsum dolor sit amet.
+                    Repellat culpa nulla natus officiis!
+                    Illum adipisci fugit accusamus modi.
+                    Atque minus debitis nam molestias.
+                    Earum odio necessitatibus aperiam accusantium.
+                    Voluptas exercitationem eos quibusdam! Sed?
+                    .</p>
+                    <img src="./image1.jpg" class="img-responsive margin" alt="">
+
+                </div>
+
+                <div class="col-sm-4 row1">
+                    <p>Lorem ipsum dolor sit amet.
+                    Repellat culpa nulla natus officiis!
+                    Illum adipisci fugit accusamus modi.
+                    Atque minus debitis nam molestias.
+                    Earum odio necessitatibus aperiam accusantium.
+                    Voluptas exercitationem eos quibusdam! Sed?
+                    .</p>
+                    <img src="./image2.jpg" class="img-responsive margin" alt="">
+
+                </div>
+
+                <div class="col-sm-4 row1">
+                    <p>Lorem ipsum dolor sit amet.
+                    Repellat culpa nulla natus officiis!
+                    Illum adipisci fugit accusamus modi.
+                    Atque minus debitis nam molestias.
+                    Earum odio necessitatibus aperiam accusantium.
+                    Voluptas exercitationem eos quibusdam! Sed?
+                    .</p>
+                    <img src="./image3.jpg" class="img-responsive margin" alt="">
+
+                </div>
+
+                <footer class="container-fluid text-center">
+                    <p>This website is made by
+                        <a href="#">Temmy</a>
+                    </p>
+                </footer>
+
+            </div>
+        </div>
+       
+
+    </div>
+
+    
+
+
+    <script src="Tayo.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
