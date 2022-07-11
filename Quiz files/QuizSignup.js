@@ -1,10 +1,10 @@
 function submitClick(){
     var firstName = document.getElementById('input1').value;
     var lastName = document.getElementById('input2').value;
-    var Email = document.getElementById('input3').value;
+    var Email = document.getElementById('userEmail').value;
     var password1 = document.getElementById('password1').value;
     var password2 = document.getElementById('password2').value;
-    var phoneNumber = document.getElementById('input4').value;
+    var phoneNumber = document.getElementById('mobilePhone').value;
     var report = document.getElementById('report');
     var report1 = document.getElementById('report1');
     var report2 = document.getElementById('report2');
@@ -16,7 +16,7 @@ function submitClick(){
 
     var pass = /(?=.*[!#$%&?^*@~() "])(?=.{8,})/
     var result2 = pass.test(password1)
-    var result3 = pass.test(password2)
+    // var result3 = pass.test(password2)
 
 
 
@@ -108,8 +108,9 @@ function submitClick(){
         let obj = {
             id: Math.floor(Math.random() * 100000),
             name: document.getElementById('input1').value,
-            email: document.getElementById('input3').value,
+            email: document.getElementById('userEmail').value,
             password: document.getElementById('password1').value,
+            userType: 'Admin'
         
         }
     
@@ -128,7 +129,7 @@ function submitClick(){
         }
         
         localStorage.setItem('users', JSON.stringify(arr))
-        window.location.assign("todologinPage.html");
+        window.location.assign("QuizLogin.html");
         
     }
    

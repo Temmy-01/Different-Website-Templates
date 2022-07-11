@@ -1,6 +1,6 @@
 function submitClick(){
-    var Password = document.getElementById('pass').value;
-    var email = document.getElementById('input-email').value;
+    // var Password = document.getElementById('pass').value;
+    // var email = document.getElementById('input-email').value;
     
 
     // var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
@@ -22,9 +22,9 @@ function submitClick(){
 
     
     var data = {
-        email: document.getElementById('input-email').value,
+        email: document.getElementById('email').value,
         Password: document.getElementById('pass').value,
-        confirmation: document.getElementById('confirmation').value,
+        // confirmation: document.getElementById('confirmation').value,
 
     };
 
@@ -42,9 +42,8 @@ function submitClick(){
     })
         
     if(loginStatus){
-        confirmation.innerHTML += `<p>Correct login<i class="fas fa-check-circle"></i></p>`
-        console.log('Yes')
-        window.location.assign("todolist.html")
+       
+        window.location.assign("myQuizCategory.html")
 
     }
     else{

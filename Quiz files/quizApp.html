@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizApp</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"rel="stylesheet"/>
+     <!-- MDB  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="quizApp.css">
+</head>
+
+<style>
+    .list-group-flush a{
+        background: #1e2425;
+    }
+</style>
+<body>
+    
+
+    <div class="container-fluid px-0" style="overflow: hidden;">
+        
+        <div class="row" style="height: 100vh;" >  
+            <div class="col-md-2 " style="background-color: #1e2425;">
+                <div class=""  id="sidebar-wrapper" >
+                    <!-- <div class="p-5"> -->
+                    <!-- <div class="sidebar-heading border-bottom text-white"><h5>EduQuiz Module</h5></div> -->
+                    <div class=" list-group list-group-flush" id="navbarSupportedContent" >
+                        <a class="list-group-item list-group-item-action p-3" href="#!">Dashboard</a>
+                        <a class="list-group-item list-group-item-action list-group-item p-3"  href="#!">Categories</a>
+                        <a class="list-group-item list-group-item-action list-group-item p-3" href="#!">Manage Quiz</a>
+                        <a class="list-group-item list-group-item-action list-group-item p-3" href="#!">Activate Quiz</a>
+                    </div>
+                    <!-- </div>    -->
+                </div>
+            </div>
+
+            
+            <div class="col-md-10 px-0">
+                
+                  
+                
+                <div class="-md main" style="height: 100vh;">
+                    <div class="justify-content-between d-flex ml-2 mr-4">
+                
+                
+                        <div class="">QUIZ BANK</div>
+                        <!-- <div class="chess"><i class="fas fa-chess-king"></i><i class="fas fa-chess-queen"></i></div> -->
+                        <div class="">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn modal-button" data-toggle="modal" data-target="#exampleModal1">
+                                <i class="fas fa-plus-circle"></i> Create New Quiz
+                            </button>
+                
+                                <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Create New Quiz</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards col-md">
+                        <div class="card-single col-md">
+                            <div>
+                                <h1>54</h1>
+                                <span>Total Number Quiz</span>
+                            </div>
+
+                        
+                            <div >
+                                <span class="las la-users"></span>
+
+                            </div>
+                        </div>
+
+                        <div class="card-single col-md">
+                            <div>
+                                <h1>07</h1>
+                                <span>Total active users</span>
+                            </div>
+
+                        
+                            <div >
+                                <span class="las la-users"></span>
+    
+                            </div>
+                        </div>
+
+                        <div class="card-single">
+                            <div>
+                                    <h1>54</h1>
+                                    <span>Total inactive users</span>
+                            </div>
+    
+                            
+                            <div >
+                                <span class="las la-users"></span>
+        
+                            </div>
+                        </div>
+
+                        <div class="card-single ">
+                            <div>
+                                    <h1>5</h1>
+                                    <span>Total No of Categories</span>
+                            </div>
+    
+                            
+                            <div >
+                                <span class="las la-google-wallet"></span>
+        
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <!-- Modal for Table -->
+                    <div class="">
+                        <div class="justify-content-end d-flex">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn modal-button" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-plus-circle"></i> Create New Quiz
+                            </button>
+                    
+                                <!-- Modal -->
+                            <div class="modal fade "   id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl" >
+                                    <div class="modal-content" >
+                                        <div class="modal-header" >
+                                            <h5 class="modal-title" id="exampleModalLabel">Create New Quiz</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body" style="padding-left: 100px;">
+                                            <form action="">
+                                                <div class="row mb-3">
+                                                    <div class="col-sm-6 mb-3">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">Title</span>
+                                                            </div> 
+                                                            <input type="text" name="name" required="required" class="form-control"> 
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-sm-6 mb-3">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">Category</span>
+                                                            </div> 
+                                                            <select required="required" class="form-control custom-select">
+                                                                <option value="cat">-- All Category -- </option> 
+                                                                <option value="returning">Returning</option> 
+                                                            </select> 
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-sm-6 mb-3">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">Duration (Minutes)</span>
+                                                            </div> 
+                                                            <input type="number" name="duration" required="required" class="form-control"> 
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-sm-6 mb-3">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">Applicable To</span>
+                                                            </div> <select required="required" class="form-control custom-select">
+                                                                <option value="">Select One</option> 
+                                                                <option value="returning">Returning</option> 
+                                                                <option value="staff">Staff</option> 
+                                                                <option value="prospective">Prospective</option>
+                                                            </select> 
+                                                        </div>
+                                                        </div>      
+                                                        <div class="col-sm-6 mb-3">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text">Closing Date</span>
+                                                                </div> 
+                                                                <input type="date" name="closing_date" required="required" class="form-control"> 
+                                                            </div>
+                                                        </div> 
+                                                        <div class="col-sm-6 mb-3">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text">Enable Quiz Report View</span>
+                                                                </div> 
+                                                                <select class="form-control custom-select">
+                                                                    <option value="">--Select--</option> 
+                                                                    <option value="yes">Yes</option> 
+                                                                    <option value="no">No</option>
+                                                                </select> 
+                                                            </div>
+                                                        </div> 
+                                                        <div class="col-md-12 mb-3">
+                                                            <button type="submit" class="btn float-right btn-primary">Save</button> 
+                                                            <button type="button" class="mr-2 btn btn-link btn-sm float-right">Cancel</button>
+                                                        </div>
+                                                    
+                                                    </div>   
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="mt-4 table table-md table-striped table-bordered table-hover table-responsive-sm">
+                            <thead>
+                                <tr>
+                                    <th>#</th> 
+                                    <th>Title</th> 
+                                    <th>Category</th> 
+                                    <th>No. of Questions</th> 
+                                    <th>Stat.</th> 
+                                    <th>Created By</th> 
+                                    <th>Rating</th> 
+                                    <th>Enable Report</th> 
+                                    <th>Status</th> 
+                                    <th>Action</th>
+                                </tr>
+                            </thead> 
+
+                            <tbody id="table">
+                            </tbody>
+                            
+                        </table> 
+                        
+                        
+                    </div> 
+                    
+                    
+                </div>
+
+                
+                   
+
+                   
+    
+                
+                
+                
+                
+               
+            </div>
+            
+            
+        </div>
+    </div>
+
+    
+    
+
+
+    
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>  
+     <!-- Bootstrap core JS-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Core theme JS--> 
+
+     <script src="quiz.js"></script>
+</body>
+</html>

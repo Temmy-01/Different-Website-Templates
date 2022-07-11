@@ -1,0 +1,113 @@
+body{
+    background-image: linear-gradient(to right, #7e8f94, #181d1e);
+    
+}
+.quize{
+    text-align: center;
+     color: #ffff;
+     margin-top: none;
+     /* font-size: 45px; */
+}
+.chess{
+    color: #f8a448;
+    font-size: 35px;
+    margin-bottom: 0px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+.gif{
+    /* margin-top: 40px; */
+    width: 70%;
+    margin-left: 190px;
+    box-shadow: rgb(60,40,60) 10px 10px 10px 10px;
+}
+.play{
+    background-image: linear-gradient(#f8a448, rgb(60,40,60));
+    width: 15%;
+    margin-top: 30px;
+    margin-left: 300px;
+    border-radius: 30px;
+    color: white;
+}
+.learn{
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.modal-button{
+    background-color: #3186c3;
+}
+
+.main{
+    /* margin-top: 85px; */
+    padding: 2rem 1.5rem;
+    background: #f1f5f9;
+    /* min-height: calc(100vh - 90px); */
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    background: #fff ;
+    padding: 2rem;
+    border-radius: 2px;
+}
+
+
+.card-single div:last-child span{
+    color: var(--main-color);
+    
+}
+
+.card-single div:first-child span {
+    color: var(--text-grey);
+     
+}
+
+.card-single:last-child span {
+    background: var(--main-color);
+}
+
+.card-single:last-child h1
+.card-single:last-child div:first-child span
+.card-single:last-child div:last-child span{
+    color: #fff;
+    
+}
+
+.card-single div:first-child span {
+    color: var(--text-grey);
+    
+}
+
+
+/* 
+@media (min-width: 360px) and (max-width: 640px){
+    .gif{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .modal-button{
+        font-size: 10px;
+    }
+    .fa-crown{
+        font-size: 20px;
+    }
+    .quize2{
+        font-size: 30px;
+    }
+    .quize{
+        padding: 0px 30px 0px 30px;
+    }
+    .play{
+        margin-left: 7px;
+        width: 30%;
+        text-size-adjust: 500px;
+    }
+} */
